@@ -14,7 +14,7 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 ```
 # mount a host directory
-# https://docs.docker.com/userguide/dockervolumes/
+URL: https://docs.docker.com/userguide/dockervolumes/
 ```bash
 docker run -i -t -v /data/okapi:/home/okapi/data canadatom/okapi-docker-file:develop /bin/bash
 ```
