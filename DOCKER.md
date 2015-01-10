@@ -15,5 +15,5 @@ docker rmi $(docker images -q)
 ```
 # mount a host directory
 ```bash
-docker run -d -P --name web -v /src/webapp:/opt/webapp training/webapp python app.py
+docker run -i -t -v /data/okapi:/home/okapi/data canadatom/okapi-docker-file:develop /bin/bash
 ```
