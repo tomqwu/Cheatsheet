@@ -13,3 +13,7 @@ docker rm $(docker ps -a -q)
 ```bash
 docker rmi $(docker images -q)
 ```
+# mount a host directory
+```bash
+docker run -d -P --name web -v /src/webapp:/opt/webapp training/webapp python app.py
+```
