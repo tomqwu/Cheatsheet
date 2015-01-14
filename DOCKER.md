@@ -19,6 +19,11 @@ URL: https://docs.docker.com/userguide/dockervolumes/
 docker run -i -t -v /data/okapi:/home/okapi/data canadatom/okapi-docker-file /bin/bash
 ```
 
+# stop a container
+```bash
+ctrl+d
+```
+
 # start a container
 ## list all containers
 ```bash
