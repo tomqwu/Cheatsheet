@@ -20,7 +20,7 @@ docker run -i -t -v /data/okapi:/home/okapi/data canadatom/okapi-docker-file /bi
 ```
 
 # stop a container
-```bash
+```
 ctrl+d
 ```
 
