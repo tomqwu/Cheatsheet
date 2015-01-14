@@ -18,3 +18,19 @@ URL: https://docs.docker.com/userguide/dockervolumes/
 ```bash
 docker run -i -t -v /data/okapi:/home/okapi/data canadatom/okapi-docker-file /bin/bash
 ```
+
+# start and attach a stopped container
+## list all containers
+```bash
+docker ps -a 
+```
+
+## start the container with id
+```bash
+docker start [container_id]
+```
+
+## attach the container
+```bash
+docker attach [container_id]
+```
