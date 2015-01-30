@@ -1,5 +1,5 @@
 # Generate Javacore
-1. Get PID
+## Get PID
 ```
 watch "ps -eo pcpu,pid,user,args | sort -k 1 -r | head -6" 
 ```
@@ -11,7 +11,7 @@ or
 ```
 cat /opt/WebSphere/AppServer/profiles/AppSrv01/logs/WC_stgmall1/WC_stgmall1.pid
 ```
-2. Genearte javacore  
+## Genearte javacore  
 ```kill -3 PID```
 
 # Forwarding X11 packages in prdweb01 via scheduler
