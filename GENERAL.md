@@ -17,10 +17,11 @@ e.g.
 
 # Forwarding X11 packages in prdweb01 via scheduler
 ## first connect to scheduler server
+```bash
 ssh -X tom.wu@hostname
 ssh –X tom.wu@prdweb01
 su - root
-
+```
 # grep a string out of files printing only the file name
 grep -H "<ErrorMessage>" SystemOut*.log -R | cut -d: -f1
 
