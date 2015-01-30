@@ -16,7 +16,7 @@ e.g.
 
 
 # Forwarding X11 packages in prdweb01 via scheduler
-#first connect to scheduler server
+## first connect to scheduler server
 ssh -X tom.wu@hostname
 ssh –X tom.wu@prdweb01
 su - root
