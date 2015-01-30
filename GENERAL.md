@@ -65,3 +65,8 @@ find . -name "*.xml" -newer SKU_1408619449286_557746.xml -exec cp {} /data/full_
 ```
 find . -name "daily_archive.20140*.gz" -exec tar ztvf {} \; > /tmp/find.log
 ```
+
+# Check RHEL release
+```
+cat /etc/redhat-release
+```
