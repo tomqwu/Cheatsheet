@@ -70,3 +70,16 @@ find . -name "daily_archive.20140*.gz" -exec tar ztvf {} \; > /tmp/find.log
 ```
 cat /etc/redhat-release
 ```
+
+# Run Level
+```
+chkconfig –list | grep 5:on
+chkconfig <Service-Name> on –level 3
+```
+
+# Kernel parameters
+```
+/etc/sysctl.conf
+sysctl -p
+```
+
