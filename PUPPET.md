@@ -1,4 +1,4 @@
-# test puppet change without pulling the change 
+# Test puppet change without pulling the change 
 ## run with root
 ```bash
 /opt/bin/./puppet agent --test --noop
