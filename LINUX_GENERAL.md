@@ -83,3 +83,21 @@ chkconfig <Service-Name> on –level 3
 sysctl -p
 ```
 
+# NFS
+## server
+```
+yum install nfs-utils nfs-utils-lib
+chkconfig nfs on 
+service rpcbind start
+service nfs start
+vi /etc/exports   # add /home 12.33.44.555(rw,sync,no_root_squash,no_subtree_check)
+exportfs -a
+```
+## client
+```
+yum install nfs-utils nfs-utils-lib
+mkdir -p /mnt/nfs/home
+mount 12.34.56.789:/home /mnt/nfs/home
+df -h # validate or use mount
+```
+
