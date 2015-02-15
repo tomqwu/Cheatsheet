@@ -18,3 +18,14 @@ end
 ```rails
 rake db:migrate
 ```
+
+```rails
+rails generate controller Persons index new edit
+```
+
+```ruby
+  def category_params
+  	params.require(:category).permit(:name, :thumburl)
+  end
+```
+
