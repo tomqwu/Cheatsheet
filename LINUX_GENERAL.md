@@ -73,7 +73,7 @@ cat /etc/redhat-release
 
 # Run Level
 ```
-chkconfig –list | grep 5:on
+chkconfig –-list | grep 5:on
 chkconfig <Service-Name> on –level 3
 ```
 
