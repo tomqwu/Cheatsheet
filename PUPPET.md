@@ -16,8 +16,10 @@
 # Certificate
 ```
 puppet ca sign hostname-of-agent
+puppet cert sign --all
 ```
 ## Location of CA
 ```
 /path_puppet/puppet/ssl/ca/signed
 ```
+
