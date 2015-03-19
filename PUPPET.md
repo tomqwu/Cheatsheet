@@ -23,3 +23,7 @@ puppet cert sign --all
 /path_puppet/puppet/ssl/ca/signed
 ```
 
+## Validate
+```
+puppet parser validate cowsayings/manifests/cowsay.pp
+```
