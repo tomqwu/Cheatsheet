@@ -14,3 +14,9 @@ netmask 255.255.255.0
 network 192.168.56.0
 broadcast 192.168.56.255
 ```
+
+## add /etc/hosts
+```
+192.168.56.101    myserver1
+192.168.56.102    myserver2
+```
