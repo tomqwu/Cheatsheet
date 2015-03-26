@@ -20,3 +20,9 @@ broadcast 192.168.56.255
 192.168.56.101    myserver1
 192.168.56.102    myserver2
 ```
+
+## restart etho1
+```
+ifdown eth1
+ifup eth1
+```
