@@ -21,7 +21,7 @@ broadcast 192.168.56.255
 192.168.56.102    myserver2
 ```
 
-## restart etho1
+## restart eth1 or reboot
 ```
 ifdown eth1
 ifup eth1
