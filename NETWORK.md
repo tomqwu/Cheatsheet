@@ -1,9 +1,9 @@
 # Cluster VM
 ## config host-only in adaptor 2 
-```
+
 192.168.56.1
 255.255.255.0
-```
+
 
 ## config VM /etc/network/interfaces
 ```
