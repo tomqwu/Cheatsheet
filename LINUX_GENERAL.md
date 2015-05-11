@@ -5,22 +5,12 @@ watch "ps -eo pcpu,pid,user,args | sort -k 1 -r | head -6"
 ```
 or
 ```
-ps -ef | grep WebSphere
-```
-or
-```
 cat /opt/WebSphere/AppServer/profiles/AppSrv01/logs/WC_stgmall1/WC_stgmall1.pid
 ```
 ## Genearte javacore  
 ```kill -3 PID```
 
-# Forwarding X11 packages in prdweb01 via scheduler
-## first connect to scheduler server
 ```bash
-ssh -X tom.wu@hostname
-ssh –X tom.wu@prdweb01
-su - root
-```
 # grep a string out of files printing only the file name
 ```
 grep -H "<ErrorMessage>" SystemOut*.log -R | cut -d: -f1
