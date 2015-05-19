@@ -91,3 +91,6 @@ mount 12.34.56.789:/home /mnt/nfs/home
 df -h # validate or use mount
 ```
 
+## alais
+alias myFolderShortcut='cd /Users/tom.wu/Documents'
+
