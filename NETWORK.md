@@ -26,3 +26,18 @@ broadcast 192.168.56.255
 ifdown eth1
 ifup eth1
 ```
+
+
+
+# Centos minimal running on Virtualbox
+```
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
+```
+## change to 
+```
+DEVICE="eth0"
+HWADDR="08:00:27:07:9e:57"
+NM_CONTROLLED="NO"
+ONBOOT="YES"
+BOOTPROTO="dhcp"
+```
