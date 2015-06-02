@@ -35,8 +35,6 @@ vi /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 ## change to 
 ```
-DEVICE="eth0"
-HWADDR="08:00:27:07:9e:57"
 NM_CONTROLLED="NO"
 ONBOOT="YES"
 BOOTPROTO="dhcp"
