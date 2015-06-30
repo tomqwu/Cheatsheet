@@ -39,3 +39,8 @@ docker start [container_id]
 ```bash
 docker attach [container_id]
 ```
+
+## list all containers name and IP
+```
+docker ps | tail -n +2 | while read -a a; do name=${a[$((${#a[@]}-1))]}; echo -ne "$name\t"; docker inspect $name | grep IPAddress | cut -d \" -f 4; done
+```
