@@ -44,3 +44,8 @@ docker attach [container_id]
 ```
 docker ps | tail -n +2 | while read -a a; do name=${a[$((${#a[@]}-1))]}; echo -ne "$name\t"; docker inspect $name | grep IPAddress | cut -d \" -f 4; done
 ```
+
+## list all containers name and gitsha
+```
+docker ps | tail -n +2 | while read -a a; do name=${a[$((${#a[@]}-1))]}; echo -ne "$name\t"; docker inspect $name | grep sha | cut -d \" -f 4 | awk -F "@" '{print $2}'; done
+```
