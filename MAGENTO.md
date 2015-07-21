@@ -31,3 +31,19 @@ jQuery(document).ready( function () {
         </action>
 </reference>
 ```
+
+## inline jQuery
+```
+<script type="text/javascript">// <![CDATA[
+jQuery('.owl-carousel.testimonials-slider').owlCarousel({
+                                loop:true,
+                                margin: 0,
+                                responsiveClass: true,
+                                nav: false,
+                                dots: false,
+                                items: 1,
+                                autoplay: true,
+                                autoplayTimeout: 8000
+                            });
+// ]]></script>
+```
