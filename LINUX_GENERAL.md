@@ -93,7 +93,7 @@ df -h # validate or use mount
 
 ## alais
 ```
-alias ll='ls -al'
+alias ll=\'ls -al\'
 ```
 
 ## Allocate additional disk
