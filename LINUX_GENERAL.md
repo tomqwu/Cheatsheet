@@ -8,11 +8,11 @@ or
 cat /opt/WebSphere/AppServer/profiles/AppSrv01/logs/WC_stgmall1/WC_stgmall1.pid
 ```
 ## Genearte javacore  
-```kill -3 PID```
-
-```bash
-# grep a string out of files printing only the file name
 ```
+kill -3 PID
+```
+# grep a string out of files printing only the file name
+```bash
 grep -H "<ErrorMessage>" SystemOut*.log -R | cut -d: -f1
 ```
 
@@ -93,7 +93,7 @@ df -h # validate or use mount
 
 ## alais
 ```
-alias ll=\'ls -al\'
+alias ll='ls -al'
 ```
 
 ## Allocate additional disk
