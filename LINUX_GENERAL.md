@@ -98,6 +98,8 @@ alias ll='ls -al'
 
 ## Allocate additional disk
 ```
-mkfs -t ext4 /dev/xvdc1
-echo "/dev/xvdc1 /mount_name ext4 defaults 0 0" >> /etc/fstab
+mkfs -t ext4 /dev/xvdc
+echo "/dev/xvdc /mount_name ext4 defaults 0 0" >> /etc/fstab
+mkdir -p /mount_name
+mount /mount_name
 ```
