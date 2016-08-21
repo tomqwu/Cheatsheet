@@ -31,11 +31,7 @@ find . -type f -size +50000k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
 ```
 for f in *.php4; do mv $f `basename $f .php4`.php; done;
 ```
-# add
-```
 
-```
-chage -E -1 -I -1 -M 99999 -m 0 deploy
 ```
 for f in *; do mv $f `basename $f `.txt; done;
 ```
@@ -106,4 +102,9 @@ mkfs -t ext4 /dev/xvdc
 echo "/dev/xvdc /mount_name ext4 defaults 0 0" >> /etc/fstab
 mkdir -p /mount_name
 mount /mount_name
+```
+
+## chage
+```
+chage -E -1 -I -1 -M 99999 -m 0 deploy
 ```
