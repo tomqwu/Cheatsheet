@@ -33,6 +33,10 @@ for f in *.php4; do mv $f `basename $f .php4`.php; done;
 ```
 # add
 ```
+
+```
+chage -E -1 -I -1 -M 99999 -m 0 deploy
+```
 for f in *; do mv $f `basename $f `.txt; done;
 ```
 # remove
