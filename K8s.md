@@ -1,4 +1,4 @@
-### query readiness of service
+### Query readiness of service
 ``` json
 kubectl get pod -l k8s-app=policycenter-app -o jsonpath='{.items[*].status.containerStatuses[*].ready}'
 ```
