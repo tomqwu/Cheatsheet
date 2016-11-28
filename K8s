@@ -1,0 +1,7 @@
+### query readiness of service
+```
+kubectl get pod -l k8s-app=policycenter-app -o jsonpath='{.items[*].status.containerStatuses[*].ready}'
+```
+```
+kubectl get pod -l k8s-app=policycenter-app -o go-template="{{range .items}}{{range .status.containerStatuses}}{{.ready}}{{end}}{{end}}"
+```
